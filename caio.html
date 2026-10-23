@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Novo Horizonte — Identidade Visual</title>
+<meta name="description" content="Manual de Identidade Visual - Assistência Previdenciária Novo Horizonte">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -31,7 +34,7 @@ html, body {
   user-select: none;
 }
 
-/* LOADER */
+/* ===== LOADER ===== */
 .loader {
   position: fixed;
   inset: 0;
@@ -42,7 +45,7 @@ html, body {
   justify-content: center;
   flex-direction: column;
   gap: 12px;
-  transition: opacity 0.5s ease, visibility 0.5s;
+  transition: opacity 0.6s ease, visibility 0.6s;
 }
 
 .loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -81,7 +84,7 @@ html, body {
   color: var(--dourado);
 }
 
-/* CURSOR */
+/* ===== CURSOR ===== */
 .cursor-dot {
   position: fixed;
   width: 4px; height: 4px;
@@ -109,7 +112,7 @@ html, body {
   background: rgba(201, 169, 97, 0.08);
 }
 
-/* SPOTLIGHT */
+/* ===== SPOTLIGHT ===== */
 .spotlight {
   position: fixed;
   inset: 0;
@@ -122,7 +125,7 @@ html, body {
 
 body:hover .spotlight { opacity: 1; }
 
-/* PROGRESS */
+/* ===== PROGRESS ===== */
 .progress-ring {
   position: fixed;
   top: 18px; right: 18px;
@@ -150,7 +153,7 @@ body:hover .spotlight { opacity: 1; }
   letter-spacing: 1px;
 }
 
-/* TOP NAV */
+/* ===== TOP NAV ===== */
 .top-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -206,15 +209,7 @@ body:hover .spotlight { opacity: 1; }
   background: rgba(201, 169, 97, 0.3);
 }
 
-/* MAIN LAYOUT */
-.main-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* NAV DOTS */
+/* ===== NAV DOTS ===== */
 .nav-dots {
   position: fixed;
   right: 16px;
@@ -269,7 +264,7 @@ body:hover .spotlight { opacity: 1; }
   transform: translateY(-50%) translateX(0);
 }
 
-/* NAV ARROWS */
+/* ===== NAV ARROWS ===== */
 .nav-arrows {
   position: fixed;
   bottom: 16px;
@@ -329,7 +324,7 @@ body:hover .spotlight { opacity: 1; }
   color: var(--dourado);
 }
 
-/* SLIDES */
+/* ===== SLIDES ===== */
 .slides-container {
   position: relative;
   width: 100%;
@@ -369,7 +364,7 @@ body:hover .spotlight { opacity: 1; }
   overflow: hidden;
 }
 
-/* REVEAL */
+/* ===== REVEAL ===== */
 .reveal {
   opacity: 0;
   transform: translateY(25px);
@@ -401,7 +396,7 @@ body:hover .spotlight { opacity: 1; }
 .d-6 { transition-delay: 0.3s !important; }
 .d-7 { transition-delay: 0.35s !important; }
 
-/* LABELS */
+/* ===== LABELS ===== */
 .section-label {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.55rem;
@@ -452,7 +447,7 @@ body:hover .spotlight { opacity: 1; }
 
 .section-text strong { color: var(--marfim); font-weight: 500; }
 
-/* SLIDE 1: HERO */
+/* ===== SLIDE 1: HERO ===== */
 #slide-1 {
   background: radial-gradient(ellipse at 20% 50%, rgba(26, 54, 93, 0.4) 0%, var(--azul-deep) 60%);
 }
@@ -590,7 +585,7 @@ body:hover .spotlight { opacity: 1; }
   text-transform: uppercase;
 }
 
-/* SLIDE 2: CONCEPT */
+/* ===== SLIDE 2: CONCEPT ===== */
 #slide-2 {
   background: linear-gradient(135deg, var(--azul-deep) 0%, var(--azul) 100%);
 }
@@ -715,7 +710,7 @@ body:hover .spotlight { opacity: 1; }
   line-height: 1.2;
 }
 
-/* SLIDE 3: SYMBOLISM */
+/* ===== SLIDE 3: SYMBOLISM ===== */
 #slide-3 {
   background: linear-gradient(180deg, var(--azul) 0%, var(--chumbo) 100%);
 }
@@ -819,7 +814,7 @@ body:hover .spotlight { opacity: 1; }
   font-weight: 300;
 }
 
-/* SLIDE 4: PALETTE */
+/* ===== SLIDE 4: PALETTE ===== */
 #slide-4 {
   background: var(--chumbo);
 }
@@ -937,7 +932,7 @@ body:hover .spotlight { opacity: 1; }
   font-weight: 300;
 }
 
-/* SLIDE 5: TYPOGRAPHY */
+/* ===== SLIDE 5: TYPOGRAPHY ===== */
 #slide-5 {
   background: linear-gradient(135deg, var(--azul-deep) 0%, var(--azul) 100%);
 }
@@ -1022,7 +1017,7 @@ body:hover .spotlight { opacity: 1; }
 .font-mont-bold { font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 1px; }
 .font-mont-reg { font-family: 'Montserrat', sans-serif; font-weight: 400; }
 
-/* SLIDE 6: VARIATIONS */
+/* ===== SLIDE 6: VARIATIONS ===== */
 #slide-6 {
   background: radial-gradient(ellipse at 70% 30%, rgba(26, 54, 93, 0.3) 0%, var(--azul-deep) 60%);
 }
@@ -1108,7 +1103,7 @@ body:hover .spotlight { opacity: 1; }
   color: var(--dourado);
 }
 
-/* SLIDE 7: VALUES */
+/* ===== SLIDE 7: VALUES ===== */
 #slide-7 {
   background: linear-gradient(180deg, var(--chumbo) 0%, var(--azul-deep) 100%);
 }
@@ -1187,7 +1182,7 @@ body:hover .spotlight { opacity: 1; }
   font-weight: 300;
 }
 
-/* SLIDE 8: ESSENCE */
+/* ===== SLIDE 8: ESSENCE ===== */
 #slide-8 {
   background: radial-gradient(ellipse at 50% 50%, rgba(26, 54, 93, 0.4) 0%, var(--azul-deep) 70%);
 }
@@ -1259,7 +1254,7 @@ body:hover .spotlight { opacity: 1; }
   background: var(--azul-deep);
 }
 
-/* SLIDE 9: FOOTER */
+/* ===== SLIDE 9: FOOTER ===== */
 #slide-9 {
   background: linear-gradient(135deg, var(--chumbo) 0%, var(--azul-deep) 100%);
 }
@@ -1308,7 +1303,7 @@ body:hover .spotlight { opacity: 1; }
   text-transform: uppercase;
 }
 
-/* CONFETTI */
+/* ===== CONFETTI ===== */
 .confetti-piece {
   position: fixed;
   width: 5px;
@@ -1324,7 +1319,7 @@ body:hover .spotlight { opacity: 1; }
   100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
 }
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .slide { padding: 50px 20px 40px; }
   .concept-layout { grid-template-columns: 1fr; gap: 15px; }
@@ -1799,21 +1794,21 @@ body:hover .spotlight { opacity: 1; }
 
 <script>
 // LOADER
-window.addEventListener('load', () => {
-  setTimeout(() => {
+window.addEventListener('load', function() {
+  setTimeout(function() {
     document.getElementById('loader').classList.add('hidden');
-    setTimeout(() => goToSlide(0), 300);
+    setTimeout(function() { goToSlide(0); }, 300);
   }, 2000);
 });
 
 // CURSOR
-const cursorDot = document.getElementById('cursorDot');
-const cursorRing = document.getElementById('cursorRing');
-const spotlight = document.getElementById('spotlight');
-let mouseX = 0, mouseY = 0;
-let ringX = 0, ringY = 0;
+var cursorDot = document.getElementById('cursorDot');
+var cursorRing = document.getElementById('cursorRing');
+var spotlight = document.getElementById('spotlight');
+var mouseX = 0, mouseY = 0;
+var ringX = 0, ringY = 0;
 
-document.addEventListener('mousemove', (e) => {
+document.addEventListener('mousemove', function(e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
   cursorDot.style.left = mouseX - 2 + 'px';
@@ -1831,48 +1826,48 @@ function animateRing() {
 }
 animateRing();
 
-const hoverElements = document.querySelectorAll('a, button, .palette-item, .symbol-card, .val-card, .var-card, .typo-item, .concept-feature, .nav-dot');
-hoverElements.forEach(el => {
-  el.addEventListener('mouseenter', () => {
+var hoverElements = document.querySelectorAll('a, button, .palette-item, .symbol-card, .val-card, .var-card, .typo-item, .concept-feature, .nav-dot');
+hoverElements.forEach(function(el) {
+  el.addEventListener('mouseenter', function() {
     cursorDot.classList.add('hover');
     cursorRing.classList.add('hover');
   });
-  el.addEventListener('mouseleave', () => {
+  el.addEventListener('mouseleave', function() {
     cursorDot.classList.remove('hover');
     cursorRing.classList.remove('hover');
   });
 });
 
 // SLIDE SYSTEM
-const slides = document.querySelectorAll('.slide');
-const dotsContainer = document.getElementById('navDots');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const progressCircle = document.getElementById('progressCircle');
-const progressText = document.getElementById('progressText');
+var slides = document.querySelectorAll('.slide');
+var dotsContainer = document.getElementById('navDots');
+var prevBtn = document.getElementById('prevBtn');
+var nextBtn = document.getElementById('nextBtn');
+var progressCircle = document.getElementById('progressCircle');
+var progressText = document.getElementById('progressText');
 
-let currentIndex = 0;
-const totalSlides = slides.length;
-const circumference = 2 * Math.PI * 22;
+var currentIndex = 0;
+var totalSlides = slides.length;
+var circumference = 2 * Math.PI * 22;
 
-slides.forEach((slide, i) => {
-  const dot = document.createElement('div');
+slides.forEach(function(slide, i) {
+  var dot = document.createElement('div');
   dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
   dot.setAttribute('data-label', slide.dataset.label || (i + 1));
-  dot.addEventListener('click', () => goToSlide(i));
+  dot.addEventListener('click', function() { goToSlide(i); });
   dotsContainer.appendChild(dot);
 });
 
-const dots = document.querySelectorAll('.nav-dot');
+var dots = document.querySelectorAll('.nav-dot');
 
 function goToSlide(index) {
   if (index < 0 || index >= totalSlides) return;
   slides[currentIndex].classList.remove('active');
   currentIndex = index;
   slides[currentIndex].classList.add('active');
-  dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+  dots.forEach(function(d, i) { d.classList.toggle('active', i === currentIndex); });
   progressText.textContent = String(currentIndex + 1).padStart(2, '0');
-  const offset = circumference - (circumference * (currentIndex + 1) / totalSlides);
+  var offset = circumference - (circumference * (currentIndex + 1) / totalSlides);
   progressCircle.style.strokeDashoffset = offset;
   prevBtn.classList.toggle('disabled', currentIndex === 0);
   nextBtn.classList.toggle('disabled', currentIndex === totalSlides - 1);
@@ -1882,10 +1877,10 @@ function goToSlide(index) {
   }
 }
 
-prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
-nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+prevBtn.addEventListener('click', function() { goToSlide(currentIndex - 1); });
+nextBtn.addEventListener('click', function() { goToSlide(currentIndex + 1); });
 
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', function(e) {
   if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
     e.preventDefault();
     goToSlide(currentIndex + 1);
@@ -1901,44 +1896,44 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-let touchStartX = 0;
-document.addEventListener('touchstart', (e) => {
+var touchStartX = 0;
+document.addEventListener('touchstart', function(e) {
   touchStartX = e.touches[0].clientX;
 }, { passive: true });
 
-document.addEventListener('touchend', (e) => {
-  const dx = e.changedTouches[0].clientX - touchStartX;
+document.addEventListener('touchend', function(e) {
+  var dx = e.changedTouches[0].clientX - touchStartX;
   if (Math.abs(dx) > 50) {
     if (dx < 0) goToSlide(currentIndex + 1);
     else goToSlide(currentIndex - 1);
   }
 });
 
-let wheelTimeout = null;
-document.addEventListener('wheel', (e) => {
+var wheelTimeout = null;
+document.addEventListener('wheel', function(e) {
   if (wheelTimeout) return;
-  wheelTimeout = setTimeout(() => { wheelTimeout = null; }, 900);
+  wheelTimeout = setTimeout(function() { wheelTimeout = null; }, 900);
   if (e.deltaY > 0) goToSlide(currentIndex + 1);
   else if (e.deltaY < 0) goToSlide(currentIndex - 1);
 }, { passive: true });
 
 // PARTICLES
-const canvas = document.getElementById('particles-canvas');
-const ctx = canvas.getContext('2d');
-const particles = [];
-let interactMouse = { x: -1000, y: -1000 };
+var canvas = document.getElementById('particles-canvas');
+var ctx = canvas.getContext('2d');
+var particles = [];
+var interactMouse = { x: -1000, y: -1000 };
 
 function resizeCanvas() {
-  const hero = document.querySelector('#slide-1');
+  var hero = document.querySelector('#slide-1');
   canvas.width = hero.offsetWidth;
   canvas.height = hero.offsetHeight;
 }
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-document.addEventListener('mousemove', (e) => {
-  const hero = document.querySelector('#slide-1');
-  const rect = hero.getBoundingClientRect();
+document.addEventListener('mousemove', function(e) {
+  var hero = document.querySelector('#slide-1');
+  var rect = hero.getBoundingClientRect();
   interactMouse.x = e.clientX - rect.left;
   interactMouse.y = e.clientY - rect.top;
 });
@@ -1955,20 +1950,20 @@ function Particle() {
   this.golden = Math.random() > 0.3;
 }
 
-for (let i = 0; i < 50; i++) {
+for (var i = 0; i < 50; i++) {
   particles.push(new Particle());
 }
 
 function animateParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  for (let i = 0; i < particles.length; i++) {
-    const p = particles[i];
+  for (var i = 0; i < particles.length; i++) {
+    var p = particles[i];
     
-    const dx = p.x - interactMouse.x;
-    const dy = p.y - interactMouse.y;
-    const dist = Math.sqrt(dx * dx + dy * dy);
+    var dx = p.x - interactMouse.x;
+    var dy = p.y - interactMouse.y;
+    var dist = Math.sqrt(dx * dx + dy * dy);
     if (dist < 70) {
-      const force = (70 - dist) / 70;
+      var force = (70 - dist) / 70;
       p.x += (dx / dist) * force * 1.2;
       p.y += (dy / dist) * force * 1.2;
     } else {
@@ -1993,11 +1988,11 @@ function animateParticles() {
       : 'rgba(245, 236, 215, ' + (p.opacity * 0.4) + ')';
     ctx.fill();
     
-    for (let j = i + 1; j < particles.length; j++) {
-      const p2 = particles[j];
-      const ddx = p.x - p2.x;
-      const ddy = p.y - p2.y;
-      const ddist = Math.sqrt(ddx * ddx + ddy * ddy);
+    for (var j = i + 1; j < particles.length; j++) {
+      var p2 = particles[j];
+      var ddx = p.x - p2.x;
+      var ddy = p.y - p2.y;
+      var ddist = Math.sqrt(ddx * ddx + ddy * ddy);
       if (ddist < 90) {
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
@@ -2013,26 +2008,26 @@ function animateParticles() {
 animateParticles();
 
 // 3D TILT
-document.querySelectorAll('.symbol-card, .val-card, .var-card').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const rotateX = (y - centerY) / centerY * -5;
-    const rotateY = (x - centerX) / centerX * 5;
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+document.querySelectorAll('.symbol-card, .val-card, .var-card').forEach(function(card) {
+  card.addEventListener('mousemove', function(e) {
+    var rect = card.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    var centerX = rect.width / 2;
+    var centerY = rect.height / 2;
+    var rotateX = (y - centerY) / centerY * -5;
+    var rotateY = (x - centerX) / centerX * 5;
+    card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-4px)';
   });
-  card.addEventListener('mouseleave', () => {
+  card.addEventListener('mouseleave', function() {
     card.style.transform = '';
   });
 });
 
 // CONCEPT FEATURES CLICK
-document.querySelectorAll('.concept-feature').forEach(feat => {
-  feat.addEventListener('click', () => {
-    document.querySelectorAll('.concept-feature').forEach(f => f.classList.remove('active'));
+document.querySelectorAll('.concept-feature').forEach(function(feat) {
+  feat.addEventListener('click', function() {
+    document.querySelectorAll('.concept-feature').forEach(function(f) { f.classList.remove('active'); });
     feat.classList.add('active');
   });
 });
@@ -2040,14 +2035,14 @@ document.querySelectorAll('.concept-feature').forEach(feat => {
 // COPY COLOR
 function copyColor(hex, el) {
   if (navigator.clipboard) {
-    navigator.clipboard.writeText(hex).then(() => {
-      const nameEl = el.querySelector('.palette-name');
-      const hintEl = el.querySelector('.palette-copy-hint');
-      const original = nameEl.textContent;
+    navigator.clipboard.writeText(hex).then(function() {
+      var nameEl = el.querySelector('.palette-name');
+      var hintEl = el.querySelector('.palette-copy-hint');
+      var original = nameEl.textContent;
       nameEl.textContent = '✓ Copiado';
       nameEl.style.color = '#5cb85c';
       if (hintEl) hintEl.textContent = '✓';
-      setTimeout(() => {
+      setTimeout(function() {
         nameEl.textContent = original;
         nameEl.style.color = '';
         if (hintEl) hintEl.textContent = 'Copiar';
@@ -2058,39 +2053,41 @@ function copyColor(hex, el) {
 
 // CONFETTI
 function launchConfetti() {
-  const colors = ['#c9a961', '#e8d5a3', '#4a90d9', '#e05a5a', '#f0c040', '#5cb85c', '#f5ecd7'];
-  for (let i = 0; i < 40; i++) {
-    setTimeout(() => {
-      const piece = document.createElement('div');
-      piece.className = 'confetti-piece';
-      piece.style.left = Math.random() * 100 + 'vw';
-      piece.style.background = colors[Math.floor(Math.random() * colors.length)];
-      piece.style.width = (Math.random() * 5 + 3) + 'px';
-      piece.style.height = (Math.random() * 5 + 3) + 'px';
-      piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-      piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
-      document.body.appendChild(piece);
-      setTimeout(() => piece.remove(), 4000);
-    }, i * 20);
+  var colors = ['#c9a961', '#e8d5a3', '#4a90d9', '#e05a5a', '#f0c040', '#5cb85c', '#f5ecd7'];
+  for (var i = 0; i < 40; i++) {
+    (function(index) {
+      setTimeout(function() {
+        var piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        piece.style.left = Math.random() * 100 + 'vw';
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.width = (Math.random() * 5 + 3) + 'px';
+        piece.style.height = (Math.random() * 5 + 3) + 'px';
+        piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+        piece.style.animationDuration = (Math.random() * 2 + 2) + 's';
+        document.body.appendChild(piece);
+        setTimeout(function() { piece.remove(); }, 4000);
+      }, index * 20);
+    })(i);
   }
 }
 
 // PARALLAX
-document.querySelectorAll('.slide').forEach(slide => {
-  slide.addEventListener('mousemove', (e) => {
-    const rect = slide.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
+document.querySelectorAll('.slide').forEach(function(slide) {
+  slide.addEventListener('mousemove', function(e) {
+    var rect = slide.getBoundingClientRect();
+    var x = (e.clientX - rect.left) / rect.width - 0.5;
+    var y = (e.clientY - rect.top) / rect.height - 0.5;
     
-    const orbs = slide.querySelectorAll('.concept-orb, .hero-logo-orbit');
-    orbs.forEach((orb, i) => {
-      const speed = (i + 1) * 5;
-      orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    var orbs = slide.querySelectorAll('.concept-orb, .hero-logo-orbit');
+    orbs.forEach(function(orb, i) {
+      var speed = (i + 1) * 5;
+      orb.style.transform = 'translate(' + (x * speed) + 'px, ' + (y * speed) + 'px)';
     });
     
-    const bgText = slide.querySelector('.essence-bg-text');
+    var bgText = slide.querySelector('.essence-bg-text');
     if (bgText) {
-      bgText.style.transform = `translate(calc(-50% + ${x * 12}px), calc(-50% + ${y * 12}px))`;
+      bgText.style.transform = 'translate(calc(-50% + ' + (x * 12) + 'px), calc(-50% + ' + (y * 12) + 'px))';
     }
   });
 });
